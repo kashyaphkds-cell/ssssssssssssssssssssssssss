@@ -1,7 +1,12 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import CountdownTimer from './CountdownTimer';
 
 const FinalCTA = () => {
+  // Calculate target date (48 hours from now)
+  const targetDate = new Date();
+  targetDate.setHours(targetDate.getHours() + 48);
+
   return (
     <section 
       className="py-16 md:py-24 px-4"
@@ -42,6 +47,18 @@ const FinalCTA = () => {
           <p style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Join hundreds of Indian women who have already started their healing journey
           </p>
+          
+          <div className="mb-8">
+            <p 
+              className="text-lg md:text-xl font-bold mb-4 text-white"
+              style={{ 
+                fontFamily: 'Montserrat, sans-serif'
+              }}
+            >
+              ✅ YES! I'm Ready to Heal – Enroll Now Before the Offer Ends
+            </p>
+            <CountdownTimer targetDate={targetDate} className="mb-6" />
+          </div>
         </div>
       </div>
     </section>

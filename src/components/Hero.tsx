@@ -1,8 +1,13 @@
 import React from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import Silk from './Silk';
+import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
+  // Calculate target date (48 hours from now)
+  const targetDate = new Date();
+  targetDate.setHours(targetDate.getHours() + 48);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-8 md:py-24 overflow-hidden">
       {/* Animated Silk Background */}
@@ -78,6 +83,20 @@ const Hero = () => {
               12:34
             </div>
           </div>
+        </div>
+
+        {/* Limited Time Offer Section */}
+        <div className="mb-8">
+          <p 
+            className="text-lg md:text-xl font-bold mb-4 text-center"
+            style={{ 
+              fontFamily: 'Montserrat, sans-serif', 
+              color: '#2B3A55' 
+            }}
+          >
+            ⏳ Limited-Time Offer: Special Price Ends in 48 Hours!
+          </p>
+          <CountdownTimer targetDate={targetDate} className="mb-6" />
         </div>
 
         <button 
