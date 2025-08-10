@@ -104,6 +104,15 @@ const OfferStack = () => {
           >
             Yours for Just ₹4,999
           </p>
+          <p 
+            className="text-base mt-2 opacity-75"
+            style={{ 
+              fontFamily: 'Montserrat, sans-serif', 
+              color: '#2B3A55' 
+            }}
+          >
+            Special launch price - returning to ₹8,999 soon
+          </p>
         </div>
         
         <div className="text-center">

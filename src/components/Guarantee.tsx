@@ -40,6 +40,15 @@ const Guarantee = () => {
           >
             Try the course for <strong>7 days</strong>. If you don't feel emotionally better or see change in your relationship with food, we'll refund you. <strong>No questions asked.</strong>
           </p>
+          <p 
+            className="text-base mt-4 font-semibold text-center"
+            style={{ 
+              fontFamily: 'Montserrat, sans-serif', 
+              color: '#9EB384' 
+            }}
+          >
+            ✨ Join the women who are already transforming their lives
+          </p>
         </div>
       </div>
     </section>

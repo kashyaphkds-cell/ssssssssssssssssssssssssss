@@ -36,6 +36,21 @@ const Testimonials = () => {
           What Real Women Say…
         </h2>
         
+        <div 
+          className="text-center mb-8 p-4 rounded-2xl max-w-2xl mx-auto"
+          style={{ backgroundColor: '#FFDDD2' }}
+        >
+          <p 
+            className="text-sm font-semibold"
+            style={{ 
+              fontFamily: 'Montserrat, sans-serif', 
+              color: '#2B3A55' 
+            }}
+          >
+            💫 Over 500+ women have already started their healing journey this month
+          </p>
+        </div>
+        
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
